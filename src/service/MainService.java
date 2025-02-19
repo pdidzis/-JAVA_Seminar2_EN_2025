@@ -1,6 +1,9 @@
 package service;
 
+import model.Degree;
+import model.Professor;
 import model.Student;
+
 
 public class MainService {
 	public static void main(String[] args) {
@@ -13,6 +16,14 @@ public class MainService {
 		
 		Student st3 = new Student("2342342", "425245243");
 		System.out.println(st3);
+		
+		Student st4 = new Student(null, null);
+		System.out.println(st4);
+		
 	}
+	
+	
+	
+	
 	
 }

@@ -51,7 +51,7 @@ public class Student {
 	public Student() {
 		setStID();
 		setName("Test");
-		setSurname("Test");
+		setSurname("Student");
 	}
 	
 	
