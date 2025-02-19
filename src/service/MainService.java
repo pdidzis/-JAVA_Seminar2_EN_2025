@@ -19,6 +19,20 @@ public class MainService {
 		
 		Student st4 = new Student(null, null);
 		System.out.println(st4);
+	
+		Professor pf1 = new Professor();
+		System.out.println(pf1.toString());
+		
+		Professor pf2 = new Professor("Amy", "Taylor", Degree.dr);
+		System.out.println(pf2.toString());
+		
+		Professor pf3 = new Professor("13421243", "13451345", Degree.bsc);
+		System.out.println(pf3.toString());
+		
+		Professor pf4 = new Professor(null, null, null);
+		System.out.println(pf4.toString());
+		
+		
 		
 	}
 	

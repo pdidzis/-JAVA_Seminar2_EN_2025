@@ -89,7 +89,7 @@ public class Professor {
 	//6.toString
 	
 	public String toString() {
-		retirn pID + ": " + degree + " " + name + " " + surname;
+		return pId + ": " + degree + " " + name + " " + surname;
 		
 	}
 	
