@@ -26,7 +26,7 @@ public class Grade {
 	//3.setters
 	
 	public void setGId() {
-		gID = counter++;
+		gId = counter++;
 	}
 	
 	public void setGrValue(int inputGrValue) {
