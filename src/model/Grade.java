@@ -2,14 +2,14 @@ package model;
 
 public class Grade {
 	//1.variables
-	private  long gId;
+	private long gId;
 	private int grValue;
 	private Student student;
 	private Course course;
+		
+	private static long counter = 30000;
 	
-	private static long counter = 20000;
 	//2.getters
-	
 	public long getgId() {
 		return gId;
 	}
@@ -24,40 +24,52 @@ public class Grade {
 	}
 	
 	//3.setters
-	
 	public void setGId() {
 		gId = counter++;
 	}
 	
 	public void setGrValue(int inputGrValue) {
-		if (inputGrValue >= 1 && inputGrValue <= 10) {
+		if(inputGrValue >= 1 && inputGrValue <= 10) {
 			grValue = inputGrValue;
 		}
-		else 
+		else
 		{
 			grValue = 0;
 		}
-		
 	}
-	public void SetStudent(Student inputStudent) {
+	
+	public void setStudent(Student inputStudent) {
 		if(inputStudent != null) {
-			student =inputStudent;
+			student = inputStudent;
 		}
-		else 
+		else
 		{
 			student = new Student();
 		}
 	}
 	
 	public void setCourse(Course inputCourse) {
-		if(inputCourse != null) 
-		{
+		if(inputCourse != null) {
 			course = inputCourse;
 		}
-		else 
+		else
 		{
 			course = new Course();
 		}
+	}
+
+	//5.arg. cons.
+	
+	public Grade(int inputGrValue, Student inputStudent, Course inputCourse)
+	{
+		setGId();
+		setGrValue(inputGrValue);
+		setStudent(inputStudent);
+		setCourse(inputCourse);
+		
+	//6.	
+		
+		
 	}
 	
 

@@ -46,6 +46,11 @@ public class MainService {
 		Course c3 = new Course("4314321321243adsfasdf341413", -4, null);
 		System.out.println(c3);
 		
+		//Grade
+		
+		Grade g2 = new Grade(4, st2, c3, c2); // 4 -> John Green, Java
+		System.out.println(g2);
+		
 		
 		
 		
