@@ -67,9 +67,29 @@ public class Course {
 	}
 	//4.default const
 	
+	public Course() {
+		setCId();
+		setTitle("Test Course");
+		setCreditPoints(3);
+		setProfessor(new Professor());
+	}
+	
 	//5.argument const
 	
+	public Course(String inputTitle, int inputCreditPoints, Professor inputProfessor)  {
+		setCId();
+		setTitle(inputTitle);
+		setCreditPoints(inputCreditPoints);
+		setProfessor(inputProfessor);
+	} 
+	
+
 	//6.toString
+
+	public String toString()
+	{
+		return cId + ": " + title + " " + creditPoints + " " + professor;
+	}
 	
 	//other functions
 	

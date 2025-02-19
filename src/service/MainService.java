@@ -8,6 +8,7 @@ import model.Student;
 public class MainService {
 	public static void main(String[] args) {
 		
+		//Student
 		Student st1 = new Student();
 		System.out.println(st1.toString()); // We can use without toString() cause it will be called by default here
 		
@@ -20,6 +21,7 @@ public class MainService {
 		Student st4 = new Student(null, null);
 		System.out.println(st4);
 	
+		//Professor
 		Professor p1 = new Professor();
 		System.out.println(p1.toString());
 		
@@ -31,6 +33,12 @@ public class MainService {
 		
 		Professor p4 = new Professor(null, null, null);
 		System.out.println(p4.toString());
+		
+		//Course
+		
+		
+		
+		
 		
 		
 		
