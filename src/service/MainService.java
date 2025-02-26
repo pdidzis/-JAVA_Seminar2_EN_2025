@@ -51,12 +51,6 @@ public class MainService {
 			//createProfessor("Estere", "Vitola", Degree.mg);//exception will be throw
 			createProfessor("Karlis", "Immers", Degree.mg);//if there will be a duplicate before, this code line will be skipped
 			
-			for(Person tempP : allPersons) {
-				if(tempP instanceof Professor) {
-					System/out.println(tempP + " ");
-				}
-				
-			}
 			
 			System.out.println(allProfessors);//Test Karina Estere Karlis
 			System.out.println("Retrieve example: " + retrieveProfessorById(10001));//Karina
