@@ -62,10 +62,13 @@ public class Student {
 		setSurname(inputSurname);
 	}
 	
+
 	//6. toString function	
 	public String toString()
 	{
 		return stID + ": " + name + " " + surname;
 	}
+	
+	
 	//7. other functions (if necessary)
 }

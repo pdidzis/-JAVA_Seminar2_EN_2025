@@ -57,22 +57,30 @@ public class Grade {
 			course = new Course();
 		}
 	}
-
-	//5.arg. cons.
 	
+	//4. default cons.
+	public Grade() {
+		setGId();
+		setGrValue(0);
+		setStudent(new Student());
+		setCourse(new Course());
+	}
+
+	//5. arg. cons.
 	public Grade(int inputGrValue, Student inputStudent, Course inputCourse)
 	{
 		setGId();
 		setGrValue(inputGrValue);
 		setStudent(inputStudent);
 		setCourse(inputCourse);
-		
-	//6.	
-		
-		
+	}
+	
+	//6. toString
+	public String toString() {
+		return gId + ": " + grValue + "-> " 
+	+ student.getName().charAt(0) + ". " + student.getSurname()
+	+ " (" + course.getTitle() + ")";
 	}
 	
 
-	
-	
 }
